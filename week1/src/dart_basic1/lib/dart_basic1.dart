@@ -1,0 +1,4 @@
+double hitungLuasSegitiga() {
+  return 0.5 * 15 * 10;
+}
+
