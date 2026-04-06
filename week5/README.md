@@ -47,3 +47,7 @@ Membuat file `image_widget.dart` untuk menampilkan gambar logo polinema. Sebelum
 ### Langkah 6: Date and Time Pickers
 ![Date Picker](img/09.png)
 > **Penjelasan:** Menggunakan widget pemilih tanggal interaktif. Saat tombol "Pilih Tanggal" ditekan, fungsi `showDatePicker` dipanggil untuk menampilkan kalender *pop-up*. Tanggal yang dipilih akan memperbarui *state* dan menampilkannya di tengah layar.
+
+## Tugas Praktikum: Codelabs First Flutter App
+![Namer App](img/namer_app.png)
+> **Penjelasan:** Aplikasi pembuat kata acak (Namer App). Aplikasi ini memiliki fitur *generate* kata baru, tombol *like* untuk menyimpan kata favorit, dan halaman *Favorites* yang responsif terhadap perubahan ukuran layar.
