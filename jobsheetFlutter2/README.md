@@ -42,3 +42,31 @@ Tugas ini mengimplementasikan tata letak dasar aplikasi sesuai panduan. Antarmuk
 4. **Text Section:** Menampilkan paragraf deskripsi dengan tambahan `Padding` dan properti `softWrap: true` agar teks menyesuaikan lebar layar.
 
 Seluruh komponen di atas disusun secara vertikal di dalam `Column` utama, yang kemudian dibungkus menggunakan `SingleChildScrollView` agar halaman mendukung fitur *scroll* dan terhindar dari *overflow* pada layar berukuran kecil.
+
+## Praktikum 5: Membangun Navigasi di Flutter
+![Praktikum 5](img/6.png)
+Pada praktikum ini, dilakukan pembelajaran mengenai pembangunan aplikasi bergerak multi-halaman. Fokus utamanya adalah memahami mekanisme *routing* dan bagaimana cara mengirimkan data dari satu halaman ke halaman lainnya menggunakan rute yang telah didefinisikan secara unik.
+
+**Poin Utama Praktikum:**
+* **Definisi Route:** Mengatur rute aplikasi di `main.dart` menggunakan `initialRoute` dan `routes`.
+* **Pemodelan Data:** Membuat class model `Item` untuk menampung atribut nama dan harga produk.
+* **ListView:** Menampilkan data produk secara vertikal menggunakan `ListView.builder`.
+* **Interaksi User:** Menggunakan widget `InkWell` untuk mendeteksi sentuhan pada kartu produk dan memicu perpindahan halaman melalui `Navigator.pushNamed`.
+
+
+## Tugas Praktikum 2: Pengembangan Marketplace (Custom Layout & Navigasi)
+
+Tugas ini merupakan tahap pengembangan lebih lanjut dari aplikasi belanja sebelumnya dengan menerapkan desain yang lebih kompleks serta teknologi navigasi yang lebih modern.
+
+### Hasil Implementasi
+| Halaman Utama (GridView) | Halaman Detail (ItemPage) |
+| :---: | :---: |
+| ![HomePage](img/7.jpg) | ![ItemPage](img/8.jpg) |
+
+### Fitur dan Modifikasi:
+1.  **Pembaruan Model Data:** Menambahkan atribut pendukung produk berupa `imageUrl` (foto), `stock` (stok), dan `rating` untuk mensimulasikan data marketplace yang nyata.
+2.  **Transformasi Layout (GridView):** Mengubah tampilan `ListView` menjadi `GridView` (2 kolom) untuk memberikan visualisasi produk yang lebih menarik dan efisien ruang, menggunakan `SliverGridDelegateWithFixedCrossAxisCount`.
+3.  **Hero Animation:** Mengimplementasikan widget `Hero` pada setiap gambar produk. Fitur ini memberikan efek transisi visual yang halus di mana gambar terlihat "terbang" dan membesar saat berpindah dari halaman daftar ke halaman detail.
+4.  **Navigasi dengan `go_router`:** Melakukan migrasi sistem navigasi dari Navigator bawaan ke *plugin* `go_router`. Pengiriman data (*passing data*) antar halaman dikelola melalui parameter `extra`.
+5.  **Refactoring Widget:** Memecah kode menjadi widget-widget yang lebih kecil (seperti `ItemCard`) untuk meningkatkan keterbacaan kode dan memudahkan proses pemeliharaan (*maintenance*).
+6.  **Identitas Mahasiswa:** Menambahkan *footer* pada `HomePage` menggunakan `BottomAppBar` yang menampilkan nama dan NIM sebagai identitas pengerjaan tugas.
